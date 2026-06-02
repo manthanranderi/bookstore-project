@@ -1,0 +1,27 @@
+
+:root{
+--primary:#2563eb;
+--primary-dark:#1d4ed8;
+--bg:#eff6ff;
+--white:#ffffff;
+--text:#0f172a;
+--muted:#64748b;
+}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Segoe UI,sans-serif}
+body{background:linear-gradient(180deg,#eff6ff,#ffffff);color:var(--text);padding:30px}
+h1{text-align:center;font-size:42px;margin-bottom:10px}
+.topbar{display:flex;justify-content:space-between;align-items:center;margin:20px auto;max-width:1400px}
+.add-btn,.btn-primary{background:var(--primary);color:#fff;padding:12px 20px;border-radius:12px;text-decoration:none}
+.book-container{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:30px;max-width:1400px;margin:auto}
+.book-card{background:#fff;border-radius:22px;overflow:hidden;box-shadow:0 15px 35px rgba(37,99,235,.15);transition:.3s}
+.book-card:hover{transform:translateY(-10px)}
+.book-card img{width:100%;height:320px;object-fit:cover}
+.book-content{padding:20px}
+.badge{background:#dbeafe;color:#1d4ed8;padding:6px 10px;border-radius:30px;display:inline-block;margin-bottom:10px}
+.card-buttons{display:flex;gap:10px;margin-top:15px}
+.btn{padding:10px 14px;border-radius:10px;color:#fff;text-decoration:none}
+.view-btn{background:#2563eb}.edit-btn{background:#0ea5e9}.delete-btn{background:#ef4444}
+.form-container{max-width:700px;margin:auto;background:#fff;padding:30px;border-radius:20px;box-shadow:0 15px 35px rgba(37,99,235,.15)}
+input,textarea{width:100%;padding:12px;border:1px solid #cbd5e1;border-radius:12px;margin-top:8px}
+label{font-weight:600}
+.hero{max-width:1400px;margin:0 auto 30px;background:linear-gradient(135deg,#2563eb,#1e40af);color:white;padding:40px;border-radius:24px}

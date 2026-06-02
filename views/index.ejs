@@ -1,0 +1,20 @@
+<!DOCTYPE html><html><head><title>BookStore Project</title><link rel='stylesheet' href='/css/style.css'></head>
+<body>
+<div class='hero'><h1>BookStore Project</h1><p> Book Management Dashboard</p></div>
+<div class='topbar'><h2>All Books</h2><a class='add-btn' href='/add'>+ Add New Book</a></div>
+<div class='book-container'>
+<% books.forEach(book=> { %>
+<div class='book-card'>
+<img src='/uploads/<%= book.image %>'>
+<div class='book-content'>
+<div class='badge'><%= book.category %></div>
+<h2><%= book.bookName %></h2>
+<p><b>Author:</b> <%= book.author %></p>
+<p><b>Price:</b> ₹<%= book.price %></p>
+<div class='card-buttons'>
+<a class='btn view-btn' href='/book/<%= book._id %>'>View</a>
+<a class='btn edit-btn' href='/edit/<%= book._id %>'>Edit</a>
+<a class='btn delete-btn' href='/delete/<%= book._id %>'>Delete</a>
+</div>
+</div></div>
+<% }) %></div></body></html>
